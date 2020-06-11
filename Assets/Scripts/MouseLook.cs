@@ -18,7 +18,7 @@ public class MouseLook : MonoBehaviour
     }
 
     // Update is called once per frame
-    void fixedupdadte()
+    void Update()
     {
 
 
@@ -27,7 +27,7 @@ public class MouseLook : MonoBehaviour
 
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90, 90);
+        xRotation = Mathf.Clamp(xRotation, -45, 45);
 
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);

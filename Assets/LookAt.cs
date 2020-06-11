@@ -24,7 +24,7 @@ public class LookAt : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         float CurrentTime =0; 
@@ -62,6 +62,7 @@ public class LookAt : MonoBehaviour
                 Debug.Log(ArtText);
                 fadeIn = false;
                 ArtText.DOFade(0, 0.5f);
+                
             }
 
         }

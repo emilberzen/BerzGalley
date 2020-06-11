@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
-
+        /*
         if (Input.GetKey("w"))
         {
             if(isMoving == false)
@@ -52,6 +52,6 @@ public class PlayerMovement : MonoBehaviour
             isMoving = false;
         }
         old_pos = transform.localPosition;
-
+        */
     }
 }
